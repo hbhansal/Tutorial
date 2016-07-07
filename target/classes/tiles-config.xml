@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+
+	<definition name="baseLayout" template="/WEB-INF/views/common/baseLayout.jsp">
+		<put-attribute name="body" />
+		<put-attribute name="menu" value="" />
+	</definition>
+
+
+	<definition name="adminPage" extends="baseLayout">
+		<put-attribute name="menu" value="/WEB-INF/views/admin_page.jsp" />
+		<put-attribute name="body" value="" />
+
+	</definition>
+
+	<definition name="userPage" extends="baseLayout">
+		<put-attribute name="menu" value="/WEB-INF/views/user_page.jsp" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+
+	<definition name="ManageEngDetails" extends="baseLayout">
+		<put-attribute name="menu" value="/WEB-INF/views/admin_page.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/ManageEngDetails.jsp" />
+	</definition>
+
+	<definition name="ManageAppDetails" extends="baseLayout">
+		<put-attribute name="menu" value="/WEB-INF/views/admin_page.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/ManageAppDetails.jsp" />
+	</definition>
+
+	<definition name="ManageCauseCode" extends="baseLayout">
+		<put-attribute name="menu" value="/WEB-INF/views/admin_page.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/ManageCauseCode.jsp" />
+	</definition>
+
+	<definition name="ManageBU" extends="baseLayout">
+		<put-attribute name="menu" value="/WEB-INF/views/admin_page.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/ManageBU.jsp" />
+	</definition>
+
+
+	<definition name="importData" extends="baseLayout">
+		<put-attribute name="menu" value="/WEB-INF/views/user_page.jsp" />
+		<put-attribute name="body" value="/ImportData.jsp" />
+	</definition>
+
+	<definition name="userImportData" extends="baseLayout">
+		<put-attribute name="menu" value="/WEB-INF/views/user_page.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/ImportData.jsp" />
+	</definition>
+
+
+	<definition name="overview" extends="baseLayout">
+		<put-attribute name="menu" value="/WEB-INF/views/user_page.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/Overview.jsp" />
+	</definition>
+
+	<definition name="report" extends="baseLayout">
+		<put-attribute name="menu" value="/WEB-INF/views/user_page.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/report.jsp" />
+	</definition>
+
+
+	<definition name="potentialFailure" extends="baseLayout">
+		<put-attribute name="menu" value="/WEB-INF/views/user_page.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/potentialFailure.jsp" />
+	</definition>
+
+<!-- 	<definition name="actionProposal" extends="baseLayout">
+		<put-attribute name="menu" value="/WEB-INF/views/user_page.jsp" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/potentialFailure.jsp" />
+	</definition> -->
+
+	<definition name="Failure_Image" extends="baseLayout">
+		<put-attribute name="menu" value="/WEB-INF/views/user_page.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/Failure_Image.jsp" />
+	</definition>
+
+
+</tiles-definitions>
